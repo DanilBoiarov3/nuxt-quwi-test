@@ -1,0 +1,26 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  background: rgb(244, 244, 244);
+  box-sizing: border-box;
+  margin: 0;
+}
+.bold {
+    font-weight: 900;
+}
+.white-bg {
+    background: white;
+}
+.w-full {
+    width: 100%;
+}
+.toasted-container {
+    background: transparent;
+}
+.error-validate {
+    color: red;
+}
+.error-border {
+    border: 1px solid red !important;
+}
+
+
