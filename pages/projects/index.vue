@@ -18,8 +18,8 @@ export default {
             if (store.getters['projects/projects'].length === 0) {
                 await store.dispatch('projects/getProjects')
             }
-        } catch (e) {
-            console.log(e)
+        } catch ({messages}) {
+            this.$toast.error(messages, {duration: 1500})
         }
     },
     components: {

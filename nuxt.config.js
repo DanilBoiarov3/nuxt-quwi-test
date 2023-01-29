@@ -40,5 +40,6 @@ export default {
         register: []
     },
     axios: {},
-    build: {}
+    build: {},
+    target: 'server'
 };

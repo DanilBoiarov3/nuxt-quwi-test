@@ -78,8 +78,8 @@ export default {
                         password: this.password
                     });
                 }
-            } catch (e) {
-                console.log(e);
+            } catch ({messages, statusCode}) {
+                this.$toast.error(messages, {duration: 1500})
             }
         }
     }

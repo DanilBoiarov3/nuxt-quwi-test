@@ -66,8 +66,8 @@ export default {
                     await this.$store.dispatch('modals/actionModalEditProject')
                     await this.$toast.show('Project updated...', {duration: 2000});
                 }
-            } catch(e) {
-                console.log(e)
+            } catch({messages}) {
+                this.$toast.error(messages, {duration: 1500})
             }
         },
         hideModal() {
